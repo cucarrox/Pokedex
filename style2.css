@@ -136,6 +136,12 @@ main {
     border: 2px solid rgb(0, 0, 0);
 }
 
+.poke-ball {
+    background: url("images/pokeball.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .poke-image {
     width: 300px;
     min-width: 200px;
@@ -321,7 +327,7 @@ hr {
     height: 96.7%;
     border: 2px solid rgba(0, 0, 0, 0.39);
     border-radius: 0px 1px 20px 20px;
-
+    box-shadow: inset 0px 0px 14px -7px;
 }
 
 .right-div {

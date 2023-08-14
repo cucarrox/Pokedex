@@ -7,16 +7,23 @@
     <title>Pokedex</title>
 </head>
 <body>
-    <main>
+    <main id="pokedex">
      <div class="left-div">
         <div class="border">
             <div class="top-all">
                 <div class="top-border">
                     <div class="top-top">
-                        <div class="lights"></div>
+                        <div class="lights">
+                            <div class="big-ball-light"><div class="big-ball-light-blue"></div></div>
+                            <div class="tri-lights">
+                                <div class="light-1"></div>
+                                <div class="light-2"></div>
+                                <div class="light-3"></div>
+                            </div>
+                        </div>
                         <div class="space-1"></div>
                     </div>
-                    <div class="top">
+                    <div class="top" id="top">
                         <div class="space-2"></div>
                         <div class="space-3"></div>
                     </div>
@@ -77,12 +84,58 @@
                 <div class="quad"></div>
                 <div class="tri"></div>
             </div>
+            
             <div class="right-div">
                 <div class="border-left">
-    
+                    <div class="base-status"><h4 id="base-stats" style="color: rgb(116, 203, 72);">Base Stats</h4></div>
+                    <div class="right-screen">
+                        <div class="stats" id="stats">
+                            <div class="stats-bar">
+                                <div class="stat-row"><div class="bar-outer"><div class="bar-inner" style="width: 45%"></div></div></div>
+                                <div class="stat-row"><div class="bar-outer"><div class="bar-inner" style="width: 49%"></div></div></div>
+                                <div class="stat-row"><div class="bar-outer"><div class="bar-inner" style="width: 49%"></div></div></div>
+                                <div class="stat-row"><div class="bar-outer"><div class="bar-inner" style="width: 65%"></div></div></div>
+                                <div class="stat-row"><div class="bar-outer"><div class="bar-inner" style="width: 65%"></div></div></div>
+                                <div class="stat-row"><div class="bar-outer"><div class="bar-inner" style="width: 65%"></div></div></div>
+                            </div>
+                            <div class="stats-number">
+                                <div class="stat-number">045</div>
+                                <div class="stat-number">049</div>
+                                <div class="stat-number">049</div>
+                                <div class="stat-number">065</div>
+                                <div class="stat-number">065</div>
+                                <div class="stat-number">045</div>
+                            </div>
+                            <div class="stats-2">
+                                <div class="stat-desc">HP</div>
+                                <div class="stat-desc">ATK</div>
+                                <div class="stat-desc">DEF</div>
+                                <div class="stat-desc">SATK</div>
+                                <div class="stat-desc">SDEF</div>
+                                <div class="stat-desc">SPD</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poke-middle">
+                        <span id="number">#001</span>
+                        <div class="pokemon-name">
+                            <input type="text" id="search" value="Bulbasaur"/>
+                        </div>
+                    </div>
+                    <div id="data">
+                        <div id="tipos">
+                            <span class="type" style="background-color: rgb(116, 203, 72);">Grass</span>
+                            <span class="type" style="background-color: rgb(164,  62, 158);">Poison</span>
+                        </div>    
+                    </div>
+                    <div class="line-duo">
+                        <div class="line-duo-1"></div>
+                        <div class="line-duo-1"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
